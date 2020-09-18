@@ -32,27 +32,19 @@
             border-radius:1px ;
         }
         
-        .auto-style1 {
-            width: 100%;
-            border-style: solid;
-            border-width: 1px;
-        }
-
         table{
-            border:2px solid black;
-
-
-
-        }
-        table .center{
-            
-            
+            width:45%;
+            display:block;
+            margin:auto;
             
         }
-        td{
-            border:4px solid red;
-        }
-
+   
+    td{
+        padding:30px;
+        margin:30px;
+        
+    }
+  
     </style>
 </head>
 <body>
@@ -75,60 +67,73 @@
            <h2 draggable="true" class="active">Registration Form</h2>
             </div>
 
-    </form>
-    <table style="padding:2px; spacing:4px; " class="center">
-          <tr>
-            <td colspan="2">Type of Account:</td>
+    <table>
+        <tr>
+            <td >Type of Account: </td>
+            <td>
+                <asp:RadioButton ID="RadioButton1" runat="server" OnCheckedChanged="RadioButton1_CheckedChanged" Text="SB" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:RadioButton ID="RadioButton2" runat="server" Text="Current" />
+&nbsp;&nbsp; </td>
+            
+        </tr>
+        
+        <tr>
+            <td>Personal Details:</td>
+            <td>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="birthday">DOB:</label>
+<input type="date" id="birthday" name="birthday" /></td>
+            <td>Aadhar No:&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>Gender:&nbsp;
+                <asp:RadioButton ID="RadioButton3" runat="server" OnCheckedChanged="RadioButton1_CheckedChanged" Text="Male" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:RadioButton ID="RadioButton4" runat="server" OnCheckedChanged="RadioButton1_CheckedChanged" Text="Female" />
+            </td>
+            <td>PAN No:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile No:&nbsp;
+                <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            </td>
+            <td>Username:&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>Email Id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+            </td>
+            <td>Password:&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <textarea id="TextArea1" cols="20" name="S1" rows="2"></textarea></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Customer ID is: </td>
             
         </tr>
         <tr>
-            <td colspan="2">Personal Details</td>
+            <td colspan="2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Account No: </td>
             
-        </tr>
-        <tr>
-            <td>Applicant's Name:</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>DOB:</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>Mobile No:</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>Email ID:</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>Gender</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>Address:</td>
-            <td>&nbsp;</td>
         </tr>
         <tr>
             <td></td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td></td>
         </tr>
     </table>
-</body>
+
+    </form>
+    </body>
 </html>

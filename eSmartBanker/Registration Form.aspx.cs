@@ -13,5 +13,17 @@ namespace eSmartBanker
         {
 
         }
+
+        protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
