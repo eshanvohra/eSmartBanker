@@ -11,63 +11,76 @@
             padding:0;
             margin:0;
         }
-        a img{
-            width:33%;
+        img{
+               width: 218px;
+    margin-right: 357px;
         }
-        .nav-link{
-            font-size:22 px;
-            margin: 0 10px;
+     
+        .navbar-background{
+           
+            background: url("bg.jpg.jpg");
         }
         .background {
-    background: rgba(0, 0, 0, 0.5) url("bg.jpg.jpg");
-    background-size: cover;
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(223,234,33,0.4125000341933649) 0%, rgba(104,104,104,1) 0%, rgba(119,119,119,1) 0%, rgba(0,250,255,0) 100%);
+background-size: cover;
     background-repeat:no-repeat;
    
    
 }
-        a:hover{
-            font-weight:bold;
-            color:yellow !important;
-            border:3px solid yellow;
-            border-radius:1px ;
-        }
         
         table{
-            width:45%;
-            display:block;
-            margin:auto;
-            
+            width:45px;
+
         }
+        
    
     td{
         padding:30px;
         margin:30px;
         
     }
+    .navbar-item{
+       margin:0px 30px;
+       color:white;
+       font-size:20px;
+    }
+    a{
+        text-decoration:none:
+    }
+    .navbar-item:hover{
+        
+        color:black!important;
+        text-decoration:none;
+        font-weight:800;
+        background-color:white;
+        border-radius:20px;
+    }
+   
   
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-       <nav class="navbar navbar-expand-lg navbar-light background">
-  <a class="navbar-brand" href="#"><img src="logo.jpg" /></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-link active text-white" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link text-white" href="#">Features</a>
-      <a class="nav-link text-white" href="#">Pricing</a>
-     
+       <nav class="navbar navbar-expand-lg navbar-light navbar-background">
+ <img src="logo.jpg" />
+  
+    <div class="navbar-nav text-white">
+   <a class="navbar-item">Home</a>
+    <a class="navbar-item">Our Policies</a>
+        <a class="navbar-item">Contact Us</a>
+        <a class="navbar-item">Queries & Complaints</a>
     </div>
-  </div>
+  
 </nav>
-        <div class="container text-center my-5 background">
-           <h2 draggable="true" class="active">Registration Form</h2>
+        <div class="background">
+        <div class="container text-center ">
+            <br /><br />
+           <h2 draggable="true" class="active text-white">Registration Form</h2>
             </div>
+        <div class="container align-items-center">
 
-    <table>
+    <table class="table table-striped table-hover text-white" >
         <tr>
             <td >Type of Account: </td>
             <td>
@@ -133,7 +146,8 @@
             <td></td>
         </tr>
     </table>
-
+        </div>
+            </div>
     </form>
     </body>
 </html>
